@@ -16,6 +16,7 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 const app = express()
+app.use(express.json())
 
 const students = ['Jeddy']
 
